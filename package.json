@@ -1,0 +1,17 @@
+{
+	"name": "portfolioweb",
+	"version": "1.0.0",
+	"main": "script.js",
+	"scripts": {
+		"start": "node-sass sass/main.scss styles/style.css -w"
+	},
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"devDependencies": {
+		"node-sass": "^4.14.1"
+	},
+	"dependencies": {
+		"hamburgers": "^1.1.3"
+	}
+}

@@ -1,0 +1,85 @@
+.nav {
+	height: 10vh;
+	background-color: #20a4f3;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+
+	&__block {
+		display: flex;
+		flex-direction: row;
+		padding: 2rem;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__logo {
+		font-family: "Monoton", cursive;
+		font-size: 5rem;
+		margin-right: 2rem;
+	}
+
+	&__description {
+		display: flex;
+		flex-direction: column;
+		font-size: 3rem;
+	}
+}
+
+.toggler {
+	margin: 2rem;
+	height: 5rem;
+	width: 5rem;
+	position: relative;
+	z-index: 4;
+	background-color: #20a4f3;
+
+	&__checkbox {
+		height: 5rem;
+		width: 5rem;
+		position: relative;
+		z-index: 4;
+		opacity: 0;
+		cursor: pointer;
+		// background-color: #20a4f3;
+		background-color: orange;
+	}
+
+	&__line {
+		height: 1rem;
+		width: 5rem;
+		background-color: white;
+		position: absolute;
+		top: 2rem;
+		border-radius: 3px;
+		transform: all 0.2s;
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			height: 1rem;
+			width: 5rem;
+			background-color: white;
+			border-radius: 3px;
+			transform: translateY(2rem);
+			transition: all 0.2s;
+		}
+
+		&::before {
+			transform: translateY(-2rem);
+		}
+	}
+
+	&__checkbox:checked + .toggler__line {
+		background-color: #20a4f3;
+	}
+
+	&__checkbox:checked + .toggler__line::before {
+		transform: rotate(45deg);
+	}
+
+	&__checkbox:checked + .toggler__line::after {
+		transform: rotate(-45deg);
+	}
+}
