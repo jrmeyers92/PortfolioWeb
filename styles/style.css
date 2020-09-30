@@ -79,7 +79,7 @@ body {
   position: absolute;
   margin-left: auto;
   margin-right: auto;
-  bottom: 15rem; }
+  bottom: 5rem; }
   .view__project {
     font-size: 2.4rem;
     margin-bottom: 2rem; }
@@ -106,7 +106,7 @@ body {
     display: flex; }
   .projects__container {
     width: 84vw;
-    margin: 4rem;
+    margin-bottom: 4rem;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
