@@ -18,3 +18,35 @@
 		font-size: 2rem;
 	}
 }
+
+.view {
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	bottom: 15rem;
+
+	&__project {
+		font-size: 2.4rem;
+		margin-bottom: 2rem;
+	}
+
+	&__link {
+		text-decoration: none;
+		color: white;
+		transition: all 0.2s;
+
+		&:hover,
+		&:active {
+			transform: scale(1.2);
+		}
+	}
+
+	&__arrow {
+		font-size: 5rem;
+	}
+}

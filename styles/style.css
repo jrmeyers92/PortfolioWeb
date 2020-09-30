@@ -8,7 +8,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden; }
 
 .nav {
   height: 10vh;
@@ -69,6 +70,28 @@ body {
   .home__h3 {
     font-size: 2rem; }
 
+.view {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 15rem; }
+  .view__project {
+    font-size: 2.4rem;
+    margin-bottom: 2rem; }
+  .view__link {
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s; }
+    .view__link:hover, .view__link:active {
+      transform: scale(1.2); }
+  .view__arrow {
+    font-size: 5rem; }
+
 .projects {
   width: 100vw;
   display: flex;
@@ -87,11 +110,12 @@ body {
     text-align: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
     gap: 3rem; }
   .projects__project {
     background-color: yellowgreen;
-    min-width: 30rem; }
+    min-width: 30rem;
+    min-height: 30rem;
+    font-size: 2rem; }
 
 /*!
  * Hamburgers
