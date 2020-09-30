@@ -57,7 +57,17 @@ body {
 
 .home {
   height: 90vh;
-  background-color: #20a4f3; }
+  background-color: #20a4f3;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .home__headings {
+    color: white;
+    margin-top: -15rem; }
+  .home__h2 {
+    font-size: 5rem; }
+  .home__h3 {
+    font-size: 2rem; }
 
 /*!
  * Hamburgers

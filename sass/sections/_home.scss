@@ -1,4 +1,20 @@
 .home {
 	height: 90vh;
 	background-color: #20a4f3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__headings {
+		color: white;
+		margin-top: -15rem;
+	}
+
+	&__h2 {
+		font-size: 5rem;
+	}
+
+	&__h3 {
+		font-size: 2rem;
+	}
 }
