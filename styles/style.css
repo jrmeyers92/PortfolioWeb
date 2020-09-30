@@ -69,6 +69,30 @@ body {
   .home__h3 {
     font-size: 2rem; }
 
+.projects {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .projects__heading {
+    font-size: 4rem;
+    text-align: center;
+    margin: 4rem;
+    letter-spacing: 0.2rem;
+    display: flex; }
+  .projects__container {
+    width: 84vw;
+    margin: 4rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem; }
+  .projects__project {
+    background-color: yellowgreen;
+    min-width: 30rem; }
+
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
