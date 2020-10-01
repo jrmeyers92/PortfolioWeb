@@ -7,11 +7,20 @@
 
 	&__headings {
 		color: white;
+		text-align: center;
 		margin-top: -15rem;
+
+		@include phone {
+			margin-top: -20rem;
+		}
 	}
 
 	&__h2 {
 		font-size: 5rem;
+
+		@include phone {
+			font-size: 3rem;
+		}
 	}
 
 	&__h3 {

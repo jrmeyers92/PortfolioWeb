@@ -4,14 +4,16 @@ html {
   margin: 0;
   padding: 0;
   font-size: 62.5%;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  max-width: 100%; }
 
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
-  width: 100%; }
+  width: 100%;
+  max-width: 100%; }
 
 .nav {
   height: 10vh;
@@ -66,9 +68,16 @@ body {
   align-items: center; }
   .home__headings {
     color: white;
+    text-align: center;
     margin-top: -15rem; }
+    @media (max-width: 599px) {
+      .home__headings {
+        margin-top: -20rem; } }
   .home__h2 {
     font-size: 5rem; }
+    @media (max-width: 599px) {
+      .home__h2 {
+        font-size: 3rem; } }
   .home__h3 {
     font-size: 2rem; }
 
@@ -123,7 +132,8 @@ body {
     box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.1); }
 
 .github {
-  background-color: aliceblue; }
+  background-color: aliceblue;
+  padding-bottom: 4rem; }
   .github__heading {
     font-size: 4rem;
     text-align: center;
