@@ -11,6 +11,7 @@
 		margin: 4rem;
 		letter-spacing: 0.2rem;
 		display: flex;
+		color: #20a4f3;
 	}
 
 	&__container {
@@ -25,9 +26,11 @@
 	}
 
 	&__project {
-		background-color: yellowgreen;
+		background-color: rgb(224, 241, 255);
 		min-width: 30rem;
 		min-height: 30rem;
 		font-size: 2rem;
+		border-radius: 7px;
+		box-shadow: 6px 6px 4px rgba($color: #000000, $alpha: 0.1);
 	}
 }

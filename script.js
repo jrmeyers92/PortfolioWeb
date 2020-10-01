@@ -11,3 +11,13 @@ hamburger.addEventListener("click", () => {
 		navList.classList.remove("translate");
 	}
 });
+
+// event listener to close hamburger touching body
+
+// document.addEventListener('click', (e) => {
+//     if (hamburger.classList.contains("is-active")){
+//         if (!e.target.classList.contains('nav__list')) {
+//             hamburger.classList.remove('translate')
+//         }
+//     }
+// };
