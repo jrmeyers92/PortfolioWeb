@@ -39,6 +39,10 @@
 	margin-right: auto;
 	bottom: 5rem;
 
+	@include phone {
+		bottom: 1rem;
+	}
+
 	&__project {
 		font-size: 2.4rem;
 		margin-bottom: 2rem;
