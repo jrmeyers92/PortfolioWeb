@@ -1,8 +1,9 @@
 // event listener for hamburger
 
 const hamburger = document.querySelector(".hamburger--stand");
+const navList = document.querySelector(".nav__list");
+
 hamburger.addEventListener("click", () => {
-	const navList = document.querySelector(".nav__list");
 	hamburger.classList.toggle("is-active");
 
 	if (hamburger.classList.contains("is-active")) {
@@ -14,10 +15,20 @@ hamburger.addEventListener("click", () => {
 
 // event listener to close hamburger touching body
 
-// document.addEventListener('click', (e) => {
-//     if (hamburger.classList.contains("is-active")){
-//         if (!e.target.classList.contains('nav__list')) {
-//             hamburger.classList.remove('translate')
-//         }
-//     }
-// };
+document.body.addEventListener("click", (event) => {
+	if (!hamburger.classList.contains("is-active")) {
+		return;
+	}
+
+	if (
+		event.target.classList.contains("hamburger") ||
+		event.target.classList.contains("hamburger-inner") ||
+		event.target.classList.contains("hamburger-box") ||
+		event.target.classList.contains("hamburger--stand")
+	) {
+		return;
+	} else {
+		navList.classList.remove("translate");
+		hamburger.classList.remove("is-active");
+	}
+});
