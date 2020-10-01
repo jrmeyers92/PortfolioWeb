@@ -1,0 +1,16 @@
+.github {
+	background-color: aliceblue;
+
+	&__heading {
+		font-size: 4rem;
+		text-align: center;
+		padding: 4rem;
+		letter-spacing: 0.2rem;
+	}
+}
+
+.calendar {
+	width: 80vw;
+	margin-left: auto;
+	margin-right: auto;
+}

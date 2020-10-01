@@ -117,6 +117,19 @@ body {
     min-height: 30rem;
     font-size: 2rem; }
 
+.github {
+  background-color: aliceblue; }
+  .github__heading {
+    font-size: 4rem;
+    text-align: center;
+    padding: 4rem;
+    letter-spacing: 0.2rem; }
+
+.calendar {
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto; }
+
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
