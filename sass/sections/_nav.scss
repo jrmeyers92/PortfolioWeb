@@ -39,6 +39,9 @@
 		top: 10vh;
 		transform: translateX(100rem);
 		transition: all 0.3s;
+		height: 0;
+		opacity: 0;
+		overflow: hidden;
 	}
 
 	&__item {
@@ -62,4 +65,6 @@
 
 .translate {
 	transform: translateX(0);
+	opacity: 1;
+	height: auto;
 }

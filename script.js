@@ -8,8 +8,10 @@ hamburger.addEventListener("click", () => {
 
 	if (hamburger.classList.contains("is-active")) {
 		navList.classList.add("translate");
+		navList.classList.add("show");
 	} else if (!hamburger.classList.contains("is-active")) {
 		navList.classList.remove("translate");
+		navList.classList.remove("show");
 	}
 });
 
