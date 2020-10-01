@@ -13,6 +13,14 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
 			rel="stylesheet"
 		/>
+
+		<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
+		<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+		/>
 	</head>
 	<body>
 		<!-- nav  -->
@@ -35,7 +43,14 @@
 			<!-- nav list  -->
 			<ul class="nav__list">
 				<li class="nav__item"><a href="#" class="nav__link">Projects</a></li>
-				<li class="nav__item"><a href="#" class="nav__link">GitHub</a></li>
+				<li class="nav__item">
+					<a
+						href="https://github.com/jrmeyers92"
+						target="__blank"
+						class="nav__link"
+						>GitHub</a
+					>
+				</li>
 				<li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
 			</ul>
 		</nav>
@@ -62,6 +77,18 @@
 				<div class="projects__project projects__project-3">Coming soon..</div>
 			</div>
 		</section>
+
+		<div class="calendar">
+			<!-- Loading stuff -->
+			Loading the data just for you.
+		</div>
+
+		<script>
+			GitHubCalendar(".calendar", "jrmeyers92");
+			// or enable responsive functionality
+			GitHubCalendar(".calendar", "jrmeyers92", { responsive: true });
+		</script>
+
 		<script src="script.js"></script>
 	</body>
 </html>
