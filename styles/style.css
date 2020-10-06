@@ -138,16 +138,35 @@ body {
     font-size: 2rem;
     border-radius: 7px;
     box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.1);
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
     .projects__project-1 {
       background-image: url("../../to-do-app-pic.jpg");
       background-size: cover; }
   .projects__header {
     font-size: 3rem;
     color: white;
-    padding-top: -3rem; }
+    margin-top: 0.4rem; }
   .projects__image {
     width: 80%; }
+  .projects__buttons {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem; }
+    .projects__buttons a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.7rem; }
+  .projects__button {
+    background-color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 20%;
+    cursor: pointer;
+    margin: 0.3rem;
+    transition: all 0.2s; }
+    .projects__button:hover, .projects__button:active {
+      transform: scale(1.1); }
 
 .github {
   background-color: aliceblue;
