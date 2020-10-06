@@ -4,14 +4,14 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-
+	background-color: white;
 	&__heading {
 		font-size: 4rem;
 		text-align: center;
 		margin: 4rem;
 		letter-spacing: 0.2rem;
 		display: flex;
-		color: #20a4f3;
+		color: black;
 	}
 
 	&__container {
@@ -26,11 +26,27 @@
 	}
 
 	&__project {
-		background-color: rgb(224, 241, 255);
+		background-color: #4720f3;
 		min-width: 30rem;
 		min-height: 30rem;
 		font-size: 2rem;
 		border-radius: 7px;
 		box-shadow: 6px 6px 4px rgba($color: #000000, $alpha: 0.1);
+		cursor: pointer;
+
+		&-1 {
+			background-image: url("../../to-do-app-pic.jpg");
+			background-size: cover;
+		}
+	}
+
+	&__header {
+		font-size: 3rem;
+		color: white;
+		padding-top: -3rem;
+	}
+
+	&__image {
+		width: 80%;
 	}
 }
