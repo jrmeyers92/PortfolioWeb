@@ -71,7 +71,7 @@ body {
   justify-content: center;
   align-items: center; }
   .home__headings {
-    color: white;
+    color: #f6f7f8;
     text-align: center;
     margin-top: -15rem; }
     @media (max-width: 599px) {
@@ -159,7 +159,7 @@ body {
     right: 1rem; }
     .projects__buttons a {
       text-decoration: none;
-      color: black;
+      color: #170e2d;
       font-size: 1.7rem; }
   .projects__button {
     background-color: #2ec4bc;

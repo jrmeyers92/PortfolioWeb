@@ -1,12 +1,12 @@
 .home {
 	height: 90vh;
-	background-color: #20a4f3;
+	background-color: $dodger-blue;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
 	&__headings {
-		color: white;
+		color: $porcelain;
 		text-align: center;
 		margin-top: -15rem;
 
@@ -29,7 +29,7 @@
 }
 
 .view {
-	color: #f6f7f8;
+	color: $porcelain;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -50,7 +50,7 @@
 
 	&__link {
 		text-decoration: none;
-		color: #f6f7f8;
+		color: $porcelain;
 		transition: all 0.2s;
 
 		&:hover,

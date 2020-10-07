@@ -4,7 +4,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-color: #f6f7f8;
+	background-color: $porcelain;
 
 	&__heading {
 		font-size: 4rem;
@@ -12,7 +12,7 @@
 		margin: 4rem;
 		letter-spacing: 0.2rem;
 		display: flex;
-		color: #170e2d;
+		color: $haiti;
 	}
 
 	&__container {
@@ -27,7 +27,7 @@
 	}
 
 	&__project {
-		background-color: #ff3366;
+		background-color: $radical-red;
 		min-width: 30rem;
 		min-height: 30rem;
 		font-size: 2rem;
@@ -50,7 +50,7 @@
 
 	&__header {
 		font-size: 3rem;
-		color: #f6f7f8;
+		color: $porcelain;
 		margin-top: 0.4rem;
 	}
 
@@ -65,13 +65,13 @@
 
 		& a {
 			text-decoration: none;
-			color: black;
+			color: $haiti;
 			font-size: 1.7rem;
 		}
 	}
 
 	&__button {
-		background-color: #2ec4bc;
+		background-color: $turquoise;
 		padding: 1rem;
 		border: none;
 		border-radius: 20%;
