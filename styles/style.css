@@ -17,7 +17,7 @@ body {
 .nav {
   height: 10vh;
   background-color: #20a4f3;
-  color: white;
+  color: #f6f7f8;
   display: flex;
   justify-content: space-between; }
   .nav__block {
@@ -38,7 +38,7 @@ body {
     display: flex;
     flex-direction: column;
     min-width: 40vh;
-    background-color: #f8f8f8;
+    background-color: #f6f7f8;
     position: absolute;
     right: 0;
     top: 10vh;
@@ -86,7 +86,7 @@ body {
     font-size: 2rem; }
 
 .view {
-  color: white;
+  color: #f6f7f8;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -103,7 +103,7 @@ body {
     margin-bottom: 2rem; }
   .view__link {
     text-decoration: none;
-    color: white;
+    color: #f6f7f8;
     transition: all 0.2s; }
     .view__link:hover, .view__link:active {
       transform: scale(1.2); }
@@ -116,14 +116,14 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: white; }
+  background-color: #f6f7f8; }
   .projects__heading {
     font-size: 4rem;
     text-align: center;
     margin: 4rem;
     letter-spacing: 0.2rem;
     display: flex;
-    color: black; }
+    color: #170e2d; }
   .projects__container {
     width: 84vw;
     margin-bottom: 4rem;
@@ -132,20 +132,24 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 3rem; }
   .projects__project {
-    background-color: #4720f3;
+    background-color: #ff3366;
     min-width: 30rem;
     min-height: 30rem;
     font-size: 2rem;
     border-radius: 7px;
-    box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
     cursor: pointer;
-    position: relative; }
+    position: relative;
+    transition: all 0.2s; }
+    .projects__project:hover, .projects__project:active {
+      transform: scale(0.98);
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); }
     .projects__project-1 {
       background-image: url("../../to-do-app-pic.jpg");
       background-size: cover; }
   .projects__header {
     font-size: 3rem;
-    color: white;
+    color: #f6f7f8;
     margin-top: 0.4rem; }
   .projects__image {
     width: 80%; }
@@ -158,7 +162,7 @@ body {
       color: black;
       font-size: 1.7rem; }
   .projects__button {
-    background-color: white;
+    background-color: #2ec4bc;
     padding: 1rem;
     border: none;
     border-radius: 20%;
@@ -176,7 +180,7 @@ body {
     text-align: center;
     padding: 4rem;
     letter-spacing: 0.2rem;
-    color: #20a4f3; }
+    color: #170e2d; }
 
 .calendar {
   width: 80vw;

@@ -29,7 +29,7 @@
 }
 
 .view {
-	color: white;
+	color: #f6f7f8;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -50,7 +50,7 @@
 
 	&__link {
 		text-decoration: none;
-		color: white;
+		color: #f6f7f8;
 		transition: all 0.2s;
 
 		&:hover,
