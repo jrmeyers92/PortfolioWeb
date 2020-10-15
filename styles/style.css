@@ -47,6 +47,12 @@ body {
     height: 0;
     opacity: 0;
     overflow: hidden; }
+    @media (min-width: 900px) {
+      .nav__list {
+        flex-direction: row;
+        transform: translateX(0);
+        opacity: 1;
+        height: 10vh; } }
   .nav__item {
     list-style-type: none;
     margin: 2rem;

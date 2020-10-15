@@ -42,6 +42,13 @@
 		height: 0;
 		opacity: 0;
 		overflow: hidden;
+
+		@include tabletUp {
+			flex-direction: row;
+			transform: translateX(0);
+			opacity: 1;
+			height: 10vh;
+		}
 	}
 
 	&__item {
