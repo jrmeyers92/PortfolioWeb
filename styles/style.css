@@ -75,6 +75,9 @@ body {
         color: #f6f7f8; } }
     .nav__link:hover, .nav__link:active {
       border-bottom: 3px solid #20a4f3; }
+      @media (min-width: 900px) {
+        .nav__link:hover, .nav__link:active {
+          border-bottom: 3px solid #f6f7f8; } }
 
 .translate {
   transform: translateX(0);

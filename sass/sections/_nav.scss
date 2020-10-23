@@ -72,6 +72,10 @@
 		&:hover,
 		&:active {
 			border-bottom: 3px solid $dodger-blue;
+
+			@include tabletUp {
+				border-bottom: 3px solid $porcelain;
+			}
 		}
 	}
 }
