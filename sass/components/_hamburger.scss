@@ -1,4 +1,21 @@
-.hamburger {
-	background-color: white;
-	color: white;
+// .hamburger {
+// 	@include tabletUp {
+// 		display: none;
+// 	}
+// }
+
+.hamburger--stand {
+	@include tabletUp {
+		display: none;
+		opacity: 0;
+		height: 0;
+	}
 }
+
+// .hamburger-box {
+// 	@include tabletUp {
+// 		display: none;
+// 		opacity: 0;
+// 		height: 0;
+// 	}
+// }

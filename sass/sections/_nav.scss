@@ -48,6 +48,7 @@
 			transform: translateX(0);
 			opacity: 1;
 			height: 10vh;
+			background-color: $dodger-blue;
 		}
 	}
 
@@ -62,6 +63,10 @@
 		text-decoration: none;
 		color: $dodger-blue;
 		font-size: 3rem;
+
+		@include tabletUp {
+			color: $porcelain;
+		}
 
 		&:hover,
 		&:active {
