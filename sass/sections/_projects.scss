@@ -46,6 +46,12 @@
 			background-image: url("../../to-do-app-pic.jpg");
 			background-size: cover;
 		}
+
+		&-2 {
+			background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+				url(../../TicTacToePic.jpeg);
+			background-size: cover;
+		}
 	}
 
 	&__header {

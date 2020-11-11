@@ -167,6 +167,9 @@ body {
     .projects__project-1 {
       background-image: url("../../to-do-app-pic.jpg");
       background-size: cover; }
+    .projects__project-2 {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../TicTacToePic.jpeg);
+      background-size: cover; }
   .projects__header {
     font-size: 3rem;
     color: #f6f7f8;
@@ -195,7 +198,7 @@ body {
 .github {
   background-color: aliceblue;
   padding-bottom: 4rem;
-  background-color: #e6f8f7; }
+  background-color: #f0faf9; }
   .github__heading {
     font-size: 4rem;
     text-align: center;
@@ -208,7 +211,8 @@ body {
     background-color: #2ec4bc;
     margin-left: 10%;
     margin-top: 2rem;
-    transition: all 0.2s; }
+    transition: all 0.2s;
+    border: 1px black solid; }
     .github__button a {
       text-decoration: none;
       color: black;
