@@ -170,6 +170,9 @@ body {
     .projects__project-2 {
       background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../TicTacToePic.jpeg);
       background-size: cover; }
+    .projects__project-3 {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../RaftingCompany.jpg);
+      background-size: cover; }
   .projects__header {
     font-size: 3rem;
     color: #f6f7f8;

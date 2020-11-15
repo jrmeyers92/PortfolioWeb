@@ -52,6 +52,12 @@
 				url(../../TicTacToePic.jpeg);
 			background-size: cover;
 		}
+
+		&-3 {
+			background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+				url(../../RaftingCompany.jpg);
+			background-size: cover;
+		}
 	}
 
 	&__header {
