@@ -16,15 +16,15 @@
 	}
 
 	&__container {
-		width: 84vw;
+		width: 100vw;
 		margin-bottom: 4rem;
 		text-align: center;
+		align-items: center;
 		justify-content: center;
-
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		display: flex;
+		// grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 		// grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
-		gap: 3rem;
+		// gap: 3rem;
 	}
 
 	&__project {
@@ -34,7 +34,7 @@
 		max-width: 350px;
 		font-size: 2rem;
 		border-radius: 7px;
-		box-shadow: 6px 6px 6px rgba($color: #000000, $alpha: 0.3);
+		box-shadow: 2px 2px 2px rgba($color: #000000, $alpha: 0.3);
 		cursor: pointer;
 		position: relative;
 		transition: all 0.2s;
