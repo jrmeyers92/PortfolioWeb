@@ -148,6 +148,7 @@ body {
     width: 84vw;
     margin-bottom: 4rem;
     text-align: center;
+    justify-content: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 3rem; }
@@ -155,6 +156,7 @@ body {
     background-color: #ff3366;
     min-width: 30rem;
     min-height: 30rem;
+    max-width: 350px;
     font-size: 2rem;
     border-radius: 7px;
     box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);

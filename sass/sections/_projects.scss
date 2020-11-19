@@ -19,6 +19,7 @@
 		width: 84vw;
 		margin-bottom: 4rem;
 		text-align: center;
+		justify-content: center;
 
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -30,6 +31,7 @@
 		background-color: $radical-red;
 		min-width: 30rem;
 		min-height: 30rem;
+		max-width: 350px;
 		font-size: 2rem;
 		border-radius: 7px;
 		box-shadow: 6px 6px 6px rgba($color: #000000, $alpha: 0.3);
