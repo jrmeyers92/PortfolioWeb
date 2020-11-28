@@ -4,6 +4,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
 
 	&__headings {
 		color: $porcelain;
@@ -17,9 +18,11 @@
 
 	&__h2 {
 		font-size: 5rem;
+		margin-top: -10rem;
 
 		@include phone {
 			font-size: 3rem;
+			margin-top: 0;
 		}
 	}
 
@@ -37,11 +40,11 @@
 	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
-	bottom: 5rem;
+	bottom: 10rem;
 
-	@include phone {
-		bottom: 1rem;
-	}
+	// @include phone {
+	// 	bottom: 10rem;
+	// }
 
 	&__project {
 		font-size: 2.4rem;
