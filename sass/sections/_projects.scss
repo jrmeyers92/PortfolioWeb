@@ -5,6 +5,8 @@
 	align-items: center;
 	justify-content: center;
 	background-color: $porcelain;
+	margin-top: -20%;
+	padding-bottom: 20%;
 
 	&__heading {
 		font-size: 4rem;
@@ -13,6 +15,7 @@
 		letter-spacing: 0.2rem;
 		display: flex;
 		color: $haiti;
+		margin-top: 20%;
 	}
 
 	&__container {

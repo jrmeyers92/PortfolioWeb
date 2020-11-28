@@ -136,14 +136,17 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #f6f7f8; }
+  background-color: #f6f7f8;
+  margin-top: -20%;
+  padding-bottom: 20%; }
   .projects__heading {
     font-size: 4rem;
     text-align: center;
     margin: 4rem;
     letter-spacing: 0.2rem;
     display: flex;
-    color: #170e2d; }
+    color: #170e2d;
+    margin-top: 20%; }
   .projects__container {
     width: 100vw;
     margin-bottom: 4rem;
@@ -202,13 +205,15 @@ body {
 .github {
   background-color: aliceblue;
   padding-bottom: 4rem;
-  background-color: #f0faf9; }
+  background-color: #f0faf9;
+  margin-top: -20%; }
   .github__heading {
     font-size: 4rem;
     text-align: center;
     padding: 4rem;
     letter-spacing: 0.3rem;
-    color: #170e2d; }
+    color: #170e2d;
+    padding-top: 20%; }
   .github__button {
     padding: 1rem;
     border-radius: 20%;
@@ -228,6 +233,30 @@ body {
   width: 80vw;
   margin-left: auto;
   margin-right: auto; }
+
+.skills {
+  background-color: #20a4f3;
+  clip-path: polygon(0 18%, 100% 0, 100% 84%, 0% 100%);
+  margin-top: -20%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .skills__heading {
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 10%; }
+  .skills__lists {
+    display: flex;
+    margin-top: 3rem;
+    margin-bottom: 15rem; }
+  .skills ul {
+    font-size: 3rem;
+    margin-top: 1rem;
+    list-style-type: none;
+    margin: 0 3rem; }
+  .skills li {
+    line-height: 3.3rem; }
 
 /*!
  * Hamburgers
