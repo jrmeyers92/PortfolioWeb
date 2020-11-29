@@ -4,4 +4,19 @@
 	height: 50vh;
 	margin-top: -20%;
 	color: $porcelain;
+	display: flex;
+	justify-content: center;
+
+	& i {
+		margin-top: 20rem;
+		font-size: 10rem;
+		margin-left: 2rem;
+		margin-right: 2rem;
+		cursor: pointer;
+	}
+
+	& a {
+		text-decoration: none;
+		color: white;
+	}
 }
