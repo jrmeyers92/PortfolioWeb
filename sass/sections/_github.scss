@@ -3,7 +3,7 @@
 	background-color: $porcelain;
 	margin-top: -20%;
 	padding-bottom: 20%;
-
+	margin-bottom: 5rem;
 	&__heading {
 		font-size: 4rem;
 		text-align: center;
@@ -11,26 +11,6 @@
 		letter-spacing: 0.3rem;
 		color: $haiti;
 		padding-top: 20%;
-	}
-
-	&__button {
-		padding: 1rem;
-		border-radius: 20%;
-		background-color: $turquoise;
-		margin-left: 10%;
-		margin-top: 2rem;
-		transition: all 0.2s;
-		border: 1px black solid;
-
-		& a {
-			text-decoration: none;
-			color: black;
-			font-size: 2rem;
-		}
-
-		&:hover {
-			background-color: #34aca6;
-		}
 	}
 }
 
