@@ -246,6 +246,9 @@ body {
     font-size: 4rem;
     text-align: center;
     padding-top: 10%; }
+    @media (max-width: 900px) {
+      .skills__heading {
+        padding-top: 20%; } }
   .skills__lists {
     display: flex;
     margin-top: 3rem;
