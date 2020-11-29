@@ -22,6 +22,7 @@ body {
 
 .nav {
   height: 10vh;
+  width: 100vw;
   background-color: #20a4f3;
   color: #f6f7f8;
   display: flex;
@@ -43,16 +44,16 @@ body {
   .nav__list {
     display: flex;
     flex-direction: column;
-    min-width: 40vh;
     background-color: #f6f7f8;
     position: absolute;
     right: 0;
     top: 10vh;
-    transform: translateX(100rem);
+    transform: translateX(10rem);
     transition: all 0.3s;
     height: 0;
     opacity: 0;
-    overflow: hidden; }
+    overflow: hidden;
+    z-index: 1000; }
     @media (min-width: 900px) {
       .nav__list {
         flex-direction: row;
@@ -60,24 +61,27 @@ body {
         opacity: 1;
         height: 10vh;
         background-color: #20a4f3;
-        top: 0; } }
+        top: 0;
+        right: 0rem;
+        width: min-content; } }
   .nav__item {
     list-style-type: none;
     margin: 2rem;
-    text-transform: uppercase;
     transition: all 0.2s; }
   .nav__link {
     text-decoration: none;
     color: #20a4f3;
-    font-size: 3rem; }
+    font-size: 2rem;
+    padding-bottom: 3px;
+    letter-spacing: 0.3px; }
     @media (min-width: 900px) {
       .nav__link {
         color: #f6f7f8; } }
     .nav__link:hover, .nav__link:active {
-      border-bottom: 3px solid #20a4f3; }
+      border-bottom: 2px solid #20a4f3; }
       @media (min-width: 900px) {
         .nav__link:hover, .nav__link:active {
-          border-bottom: 3px solid #f6f7f8; } }
+          border-bottom: 2px solid #f6f7f8; } }
 
 .translate {
   transform: translateX(0);
@@ -203,10 +207,10 @@ body {
       transform: scale(1.1); }
 
 .github {
-  background-color: aliceblue;
   padding-bottom: 4rem;
-  background-color: #f0faf9;
-  margin-top: -20%; }
+  background-color: #f6f7f8;
+  margin-top: -20%;
+  padding-bottom: 20%; }
   .github__heading {
     font-size: 4rem;
     text-align: center;
@@ -236,7 +240,7 @@ body {
 
 .skills {
   background-color: #20a4f3;
-  clip-path: polygon(0 18%, 100% 0, 100% 84%, 0% 100%);
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
   margin-top: -20%;
   color: white;
   display: flex;
@@ -260,6 +264,13 @@ body {
     margin: 0 3rem; }
   .skills li {
     line-height: 3.3rem; }
+
+.footer {
+  background-color: #20a4f3;
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+  height: 50vh;
+  margin-top: -20%;
+  color: #f6f7f8; }
 
 /*!
  * Hamburgers

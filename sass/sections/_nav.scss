@@ -1,5 +1,6 @@
 .nav {
 	height: 10vh;
+	width: 100vw;
 	background-color: $dodger-blue;
 	color: $porcelain;
 	display: flex;
@@ -32,16 +33,16 @@
 	&__list {
 		display: flex;
 		flex-direction: column;
-		min-width: 40vh;
 		background-color: $porcelain;
 		position: absolute;
 		right: 0;
 		top: 10vh;
-		transform: translateX(100rem);
+		transform: translateX(10rem);
 		transition: all 0.3s;
 		height: 0;
 		opacity: 0;
 		overflow: hidden;
+		z-index: 1000;
 
 		@include tabletUp {
 			flex-direction: row;
@@ -50,20 +51,24 @@
 			height: 10vh;
 			background-color: $dodger-blue;
 			top: 0;
+			right: 0rem;
+			width: min-content;
 		}
 	}
 
 	&__item {
 		list-style-type: none;
 		margin: 2rem;
-		text-transform: uppercase;
+		// text-transform: uppercase;
 		transition: all 0.2s;
 	}
 
 	&__link {
 		text-decoration: none;
 		color: $dodger-blue;
-		font-size: 3rem;
+		font-size: 2rem;
+		padding-bottom: 3px;
+		letter-spacing: 0.3px;
 
 		@include tabletUp {
 			color: $porcelain;
@@ -71,10 +76,10 @@
 
 		&:hover,
 		&:active {
-			border-bottom: 3px solid $dodger-blue;
+			border-bottom: 2px solid $dodger-blue;
 
 			@include tabletUp {
-				border-bottom: 3px solid $porcelain;
+				border-bottom: 2px solid $porcelain;
 			}
 		}
 	}
