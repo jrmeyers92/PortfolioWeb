@@ -2,7 +2,7 @@ const functions = require("firebase-functions");
 const admin = require("firebase-admin");
 const nodemailer = require("nodemailer");
 const config = functions.config();
-const cors = 
+const cors = require("cors")({ orgin: true });
 admin.initializeApp();
 
 const transportor = nodemailer.createTransport({
@@ -21,11 +21,13 @@ let mailOptions = {
 // https://firebase.google.com/docs/functions/write-firebase-functions
 
 exports.sendMail = functions.https.onRequest((request, response) => {
-	transportor.sendMail(mailOptions, (error) => {
-		if (error) {
-			response.send(error);
-		} else {
-			response.send("message succesffully sent");
-		}
+	cors(request, response, () => {
+		transportor.sendMail(mailOptions, (error) => {
+			if (error) {
+				response.send(error);
+			} else {
+				response.send("message succesffully sent");
+			}
+		});
 	});
 });
