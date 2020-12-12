@@ -6,10 +6,6 @@
 		<title>Web Dev Portfolio</title>
 
 		<link
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
-			rel="stylesheet"
-		/>
-		<link
 			href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
 			rel="stylesheet"
 		/>
@@ -122,6 +118,41 @@
 				<!-- Loading stuff -->
 				Loading the data just for you.
 			</div>
+		</section>
+
+		<section class="contact">
+			<form class="contact__form form">
+				<h2 class="form__header">Lets get in touch!</h2>
+				<p class="form__blurb">
+					Please reach out! I'm currently looking for full time employment as
+					well as freelance opportunities.
+				</p>
+
+				<div class="form-control">
+					<label for="name">Name</label>
+					<input type="text" id="name" placeholder="Enter name" />
+					<small>error message</small>
+				</div>
+
+				<div class="form-control">
+					<label for="email">Email</label>
+					<input type="text" id="email" placeholder="Enter email" />
+					<small>error message</small>
+				</div>
+
+				<div class="form-control">
+					<label for="messge">Message</label>
+					<!-- <input type="text" id="message" placeholder="Enter message" /> -->
+					<textarea
+						name="message"
+						id="message"
+						rows="4"
+						class="form__message"
+					></textarea>
+					<small>error message</small>
+				</div>
+				<button type="submit" form="form" value="submit">Submit</button>
+			</form>
 		</section>
 		<footer class="footer">
 			<a href="https://www.linkedin.com/in/jake-meyers-477b7a52" target="_blank"

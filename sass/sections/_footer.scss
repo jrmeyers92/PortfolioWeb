@@ -1,8 +1,8 @@
 .footer {
-	background-color: $dodger-blue;
+	background-color: $porcelain;
 	clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
 	height: 40vh;
-	margin-top: -20%;
+	margin-top: -10%;
 	color: $porcelain;
 	display: flex;
 	justify-content: center;
@@ -19,4 +19,16 @@
 		text-decoration: none;
 		color: white;
 	}
+}
+
+.fa-linkedin {
+	color: #0e76a8;
+}
+
+.fa-github {
+	color: #171515;
+}
+
+.fa-envelope {
+	color: #bb001b;
 }
