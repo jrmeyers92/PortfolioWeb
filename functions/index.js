@@ -34,7 +34,7 @@ exports.sendMail = functions.https.onRequest((request, response) => {
 
 		let mailOptions = {
 			from: "Jake's Web Dev inc.",
-			to: request.query.dest,
+			to: "jakermeyers92@gmail.com",
 			subject: "email from form",
 			html: "hi",
 		};
