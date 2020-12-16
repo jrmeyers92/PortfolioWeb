@@ -1,7 +1,7 @@
 //animations
 const timeline = gsap.timeline({ defaults: { duration: 0.8 } });
 timeline
-	.from(".home__h2", { y: "-1000%", ease: "bounce" })
+	.from(".home__h2", { y: "-1000%", opacity: 0, ease: "bounce" })
 	.from(".home__h3", { x: "-500%", ease: "back" })
 	.from(".nav__item", { opacity: 0, stagger: 0.5 });
 
