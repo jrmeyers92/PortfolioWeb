@@ -1,14 +1,14 @@
 .footer {
 	background-color: $porcelain;
-	clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+	// clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
 	height: 40vh;
-	margin-top: -10%;
+	margin-top: -15%;
 	color: $porcelain;
 	display: flex;
 	justify-content: center;
 
 	& i {
-		margin-top: 10rem;
+		margin-top: 18rem;
 		font-size: 10rem;
 		margin-left: 2rem;
 		margin-right: 2rem;

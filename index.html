@@ -4,6 +4,11 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Web Dev Portfolio</title>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+			defer
+		></script>
+		<script src="script.js" defer></script>
 
 		<link
 			href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
@@ -50,6 +55,9 @@
 				</li>
 				<li class="nav__item">
 					<a href="#github" target="__blank" class="nav__link">GitHub</a>
+				</li>
+				<li class="nav__item">
+					<a href="#contact" target="__blank" class="nav__link">Contact Me</a>
 				</li>
 			</ul>
 		</nav>
@@ -120,8 +128,13 @@
 			</div>
 		</section>
 
-		<section class="contact">
-			<form class="contact__form form">
+		<section class="contact" id="contact">
+			<form
+				class="contact__form form"
+				action="mailto:jakermeyers92@gmail.com"
+				method="POST"
+				enctype="multipart/form-data"
+			>
 				<h2 class="form__header">Lets get in touch!</h2>
 				<p class="form__blurb">
 					Please reach out! I'm currently looking for full time employment as
@@ -151,7 +164,9 @@
 					></textarea>
 					<small>error message</small>
 				</div>
-				<button type="submit" form="form" value="submit">Submit</button>
+				<button type="submit" form="form" value="submit" id="form-submit">
+					Submit
+				</button>
 			</form>
 		</section>
 		<footer class="footer">
@@ -168,12 +183,23 @@
 			</a>
 		</footer>
 
+		<section class="modal" id="modal">
+			<div class="modal__container">
+				<i class="fas fa-times modal__exit" id="modal__exit"></i>
+				<div class="modal__content">
+					<h2>Oppps..</h2>
+					<p>
+						I'm still working on the form functionality. Please email me
+						directly at JakeRMeyers92@yahoo.com
+					</p>
+				</div>
+			</div>
+		</section>
+
 		<script>
 			GitHubCalendar(".calendar", "jrmeyers92");
 			// or enable responsive functionality
 			GitHubCalendar(".calendar", "jrmeyers92", { responsive: true });
 		</script>
-
-		<script src="script.js"></script>
 	</body>
 </html>
