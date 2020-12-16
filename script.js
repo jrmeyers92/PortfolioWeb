@@ -1,11 +1,20 @@
 //animations
-const timeline = gsap.timeline({ defaults: { duration: 0.8 } });
-timeline
-	.from(".home__h2", { y: "-1000%", opacity: 0, ease: "bounce" })
-	.from(".home__h3", { x: "-500%", ease: "back" })
-	.from(".nav__item", { opacity: 0, stagger: 0.5 });
+// const timeline = gsap.timeline({ defaults: { duration: 0.8 } });
+// timeline
+// 	.from(".home__h2", { y: "-1000%", opacity: 0, ease: "bounce" })
+// 	.from(".home__h3", { x: "-500%", ease: "back" })
+// 	.from(".nav__item", { opacity: 0, stagger: 0.5 });
 
-gsap.from(".nav__block", { opacity: 0, duration: 3, delay: 2 });
+// gsap.from(".nav__block", { opacity: 0, duration: 3, delay: 2 });
+
+//event listener for welcome screen
+
+document.addEventListener("DOMContentLoaded", (e) => {
+	const splash = document.querySelector(".splash");
+	setTimeout(() => {
+		splash.classList.add("display-none");
+	}, 2000);
+});
 
 // event listener for hamburger
 
