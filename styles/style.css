@@ -117,7 +117,7 @@ body {
   z-index: 3;
   display: none; }
   .modal__container {
-    background-color: #008ada;
+    background-color: #f8fcff;
     height: 50vh;
     width: 50vw;
     position: fixed;
@@ -125,7 +125,8 @@ body {
     transform: translateY(-50%);
     z-index: 50;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    border-radius: 5px; }
+    border-radius: 5px;
+    padding: 3rem; }
     @media (max-width: 900px) {
       .modal__container {
         width: 80vw; } }
@@ -137,7 +138,7 @@ body {
     font-size: 3rem;
     margin: 15px;
     cursor: pointer;
-    color: white; }
+    color: #20a4f3; }
   .modal__content {
     display: flex;
     height: 100%;
@@ -149,13 +150,15 @@ body {
     margin-top: -3rem; }
     .modal__content h2 {
       font-size: 3.5rem;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      color: #20a4f3; }
     .modal__content p {
       font-size: 18px;
       width: 100%;
       display: block;
       text-align: center;
-      line-height: 28px; }
+      line-height: 28px;
+      color: #20a4f3; }
 
 .show {
   display: flex; }
@@ -235,9 +238,8 @@ body {
         width: min-content; } }
   .nav__item {
     list-style-type: none;
-    margin: 2rem;
-    transition: all 0.2s;
-    word-wrap: none; }
+    margin: 1.5rem;
+    transition: all 0.2s; }
   .nav__link {
     text-decoration: none;
     color: #20a4f3;
@@ -267,14 +269,15 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%); }
   .home__headings {
     color: #f6f7f8;
-    text-align: center;
+    text-align: left;
     margin-top: -15rem; }
     @media (max-width: 599px) {
       .home__headings {
         margin-top: -20rem; } }
   .home__h2 {
     font-size: 5rem;
-    margin-top: -10rem; }
+    margin-top: -10rem;
+    margin-bottom: 0.5rem; }
     @media (max-width: 599px) {
       .home__h2 {
         font-size: 3rem;
@@ -436,14 +439,15 @@ body {
       height: 150vh; } }
 
 .footer {
-  background-color: #f6f7f8;
+  background-color: #20a4f3;
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
   height: 40vh;
   margin-top: -15%;
   color: #f6f7f8;
   display: flex;
   justify-content: center; }
   .footer i {
-    margin-top: 18rem;
+    margin-top: 15rem;
     font-size: 10rem;
     margin-left: 2rem;
     margin-right: 2rem;

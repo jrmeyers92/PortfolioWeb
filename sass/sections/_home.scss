@@ -8,7 +8,7 @@
 
 	&__headings {
 		color: $porcelain;
-		text-align: center;
+		text-align: left;
 		margin-top: -15rem;
 
 		@include phone {
@@ -19,6 +19,7 @@
 	&__h2 {
 		font-size: 5rem;
 		margin-top: -10rem;
+		margin-bottom: 0.5rem;
 
 		@include phone {
 			font-size: 3rem;
