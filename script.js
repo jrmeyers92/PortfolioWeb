@@ -55,3 +55,9 @@ const modalExit = document.getElementById("modal__exit");
 modalExit.addEventListener("click", () => {
 	modal.classList.remove("show");
 });
+
+
+// event listener to pop up video of Doubelshot website
+document.getElementById("doubleShot_button").addEventListener('click', (e) => {
+	
+})
