@@ -48,6 +48,7 @@ document.body.addEventListener("click", (event) => {
 document.getElementById("contactMe").addEventListener("click", () => {
 	const modal = document.getElementById("modal");
 	modal.classList.add("show");
+	// modal.classList.add("translateX");
 });
 
 const modalExit = document.getElementById("modal__exit");

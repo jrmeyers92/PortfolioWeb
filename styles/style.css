@@ -115,7 +115,8 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 3;
-  display: none; }
+  opacity: 0;
+  transition: all 1s; }
   .modal__container {
     background-color: #f8fcff;
     height: 50vh;
@@ -161,7 +162,8 @@ body {
       color: #20a4f3; }
 
 .show {
-  display: flex; }
+  display: flex;
+  opacity: 1; }
 
 .splash {
   height: 100vh;
@@ -339,21 +341,21 @@ body {
     font-size: 2rem;
     border-radius: 3px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    margin: 0 3rem;
     cursor: pointer;
     position: relative;
     transition: all 0.2s; }
     .projects__project:hover, .projects__project:active {
       transform: scale(0.98);
       box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); }
-    .projects__project-1 {
-      background-image: url("../../to-do-app-pic.jpg");
-      background-size: cover; }
     .projects__project-2 {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../TicTacToePic.jpeg);
-      background-size: cover; }
+      background-image: url("../../DoubleShot.png");
+      background-size: cover;
+      background-position: center; }
     .projects__project-3 {
       background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../RaftingCompany.jpg);
-      background-size: cover; }
+      background-size: cover;
+      background-position: center; }
   .projects__header {
     font-size: 3rem;
     color: #f6f7f8;
@@ -373,7 +375,6 @@ body {
     padding: 1rem;
     border: none;
     border-radius: 20%;
-    cursor: pointer;
     margin: 0.3rem;
     transition: all 0.2s; }
     .projects__button:hover, .projects__button:active {
