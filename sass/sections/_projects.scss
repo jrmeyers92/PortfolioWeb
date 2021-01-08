@@ -44,8 +44,8 @@
 		transition: all 0.2s;
 		&:hover,
 		&:active {
-			transform: scale(0.98);
-			box-shadow: 2px 2px 2px (rgba($color: black, $alpha: 0.3));
+			// transform: scale(0.98);
+			// box-shadow: 2px 2px 2px (rgba($color: black, $alpha: 0.3));
 		}
 
 		&-2 {
@@ -91,10 +91,11 @@
 		border-radius: 20%;
 		margin: 0.3rem;
 		transition: all 0.2s;
+		cursor: pointer;
 
 		&:hover,
 		&:active {
-			transform: scale(1.1);
+			transform: translateY(2px) scale(0.98);
 		}
 	}
 }

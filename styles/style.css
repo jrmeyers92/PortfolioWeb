@@ -345,9 +345,6 @@ body {
     cursor: pointer;
     position: relative;
     transition: all 0.2s; }
-    .projects__project:hover, .projects__project:active {
-      transform: scale(0.98);
-      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); }
     .projects__project-2 {
       background-image: url("../../DoubleShot.png");
       background-size: cover;
@@ -376,9 +373,10 @@ body {
     border: none;
     border-radius: 20%;
     margin: 0.3rem;
-    transition: all 0.2s; }
+    transition: all 0.2s;
+    cursor: pointer; }
     .projects__button:hover, .projects__button:active {
-      transform: scale(1.1); }
+      transform: translateY(2px) scale(0.98); }
 
 .github {
   padding-bottom: 4rem;
