@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 	const splash = document.querySelector(".splash");
 	setTimeout(() => {
 		splash.classList.add("display-none");
-	}, 000);
+	}, 1500);
 });
 
 // event listener for hamburger
@@ -56,8 +56,7 @@ modalExit.addEventListener("click", () => {
 	modal.classList.remove("show");
 });
 
-
 // event listener to pop up video of Doubelshot website
-document.getElementById("doubleShot_button").addEventListener('click', (e) => {
-	
-})
+document
+	.getElementById("doubleShot_button")
+	.addEventListener("click", (e) => {});

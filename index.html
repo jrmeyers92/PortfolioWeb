@@ -144,12 +144,12 @@
 			</div>
 		</section>
 
-		<!-- <section class="contact" id="contact">
+		<section class="contact" id="contact">
 			<form
 				class="contact__form form"
-				action="mailto:jakermeyers92@gmail.com"
-				method="POST"
-				enctype="multipart/form-data"
+				action="POST"
+				data-netlify="true"
+				name="contact__form"
 			>
 				<h2 class="form__header">Lets get in touch!</h2>
 				<p class="form__blurb">
@@ -158,14 +158,20 @@
 				</p>
 
 				<div class="form-control">
+					`
 					<label for="name">Name</label>
-					<input type="text" id="name" placeholder="Enter name" />
+					<input type="text" id="name" name="name" placeholder="Enter name" />
 					<small>error message</small>
 				</div>
 
 				<div class="form-control">
 					<label for="email">Email</label>
-					<input type="text" id="email" placeholder="Enter email" />
+					<input
+						type="text"
+						id="email"
+						name="email"
+						placeholder="Enter email"
+					/>
 					<small>error message</small>
 				</div>
 
@@ -176,14 +182,16 @@
 						id="message"
 						rows="4"
 						class="form__message"
+						name="message"
 					></textarea>
 					<small>error message</small>
 				</div>
+				<div class="field"><div data-netlify-recaptcha="true"></div></div>
 				<button type="submit" form="form" value="submit" id="form-submit">
 					Submit
 				</button>
 			</form>
-		</section> -->
+		</section>
 		<footer class="footer">
 			<a href="https://www.linkedin.com/in/jake-meyers-477b7a52" target="_blank"
 				><i class="fab fa-linkedin"></i>
