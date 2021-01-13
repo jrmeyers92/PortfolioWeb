@@ -25,9 +25,10 @@
 		align-items: center;
 		justify-content: center;
 		display: flex;
-		// grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-		// grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
-		// gap: 3rem;
+
+		@include phone {
+			flex-direction: column;
+		}
 	}
 
 	&__project {
@@ -42,6 +43,11 @@
 		cursor: pointer;
 		position: relative;
 		transition: all 0.2s;
+
+		@include phone {
+			margin-top: 3rem;
+		}
+
 		&:hover,
 		&:active {
 			// transform: scale(0.98);
