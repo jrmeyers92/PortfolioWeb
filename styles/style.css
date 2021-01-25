@@ -360,6 +360,10 @@ body {
       background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../RaftingCompany.jpg);
       background-size: cover;
       background-position: center; }
+    .projects__project-1 {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../CocktailAppPic.png");
+      background-size: cover;
+      background-position: center; }
   .projects__header {
     font-size: 3rem;
     color: #f6f7f8;
