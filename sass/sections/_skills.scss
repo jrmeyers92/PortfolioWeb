@@ -1,7 +1,7 @@
 .skills {
 	background-color: $dodger-blue;
-	clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
-	margin-top: -20%;
+	// clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
+	// margin-top: -20%;
 	color: white;
 	display: flex;
 	flex-direction: column;
@@ -10,7 +10,8 @@
 	&__heading {
 		font-size: 4rem;
 		text-align: center;
-		padding-top: 10%;
+		padding: 8rem;
+		padding-bottom: 2rem;
 
 		@include tablet {
 			padding-top: 20%;

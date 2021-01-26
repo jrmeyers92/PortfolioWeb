@@ -51,8 +51,8 @@
 			height: 10vh;
 			background-color: $dodger-blue;
 			top: 0;
-			right: 0rem;
-			width: min-content;
+			right: 2rem;
+			// width: min-content;
 		}
 	}
 
@@ -69,6 +69,7 @@
 		font-size: 2rem;
 		padding-bottom: 3px;
 		letter-spacing: 0.1px;
+		transition: all 0.2s;
 
 		@include tabletUp {
 			color: $porcelain;
@@ -76,10 +77,11 @@
 
 		&:hover,
 		&:active {
-			border-bottom: 2px solid $dodger-blue;
+			// border-bottom: 2px solid $dodger-blue;
+			color: rgb(201, 201, 201);
 
 			@include tabletUp {
-				border-bottom: 2px solid $porcelain;
+				// border-bottom: 2px solid $porcelain;
 			}
 		}
 	}

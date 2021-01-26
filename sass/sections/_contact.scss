@@ -1,14 +1,10 @@
 .contact {
 	background-color: $dodger-blue;
-	clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
-	margin-top: -20%;
+	// clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
+	// margin-top: -20%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	z-index: 10;
-	margin-bottom: 4rem;
-
-	@include tablet {
-		height: 150vh;
-	}
+	// margin-bottom: 4rem;
 }

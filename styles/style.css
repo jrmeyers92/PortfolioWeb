@@ -34,7 +34,7 @@ body {
   border-radius: 5px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   font-family: "Open Sans", sans-serif;
-  margin: 20vh 0 25vh; }
+  margin: 10vh 0 10vh; }
   @media (max-width: 900px) {
     .form {
       width: 80vw; } }
@@ -237,8 +237,7 @@ body {
         height: 10vh;
         background-color: #20a4f3;
         top: 0;
-        right: 0rem;
-        width: min-content; } }
+        right: 2rem; } }
   .nav__item {
     list-style-type: none;
     margin: 1.5rem;
@@ -248,15 +247,13 @@ body {
     color: #20a4f3;
     font-size: 2rem;
     padding-bottom: 3px;
-    letter-spacing: 0.1px; }
+    letter-spacing: 0.1px;
+    transition: all 0.2s; }
     @media (min-width: 900px) {
       .nav__link {
         color: #f6f7f8; } }
     .nav__link:hover, .nav__link:active {
-      border-bottom: 2px solid #20a4f3; }
-      @media (min-width: 900px) {
-        .nav__link:hover, .nav__link:active {
-          border-bottom: 2px solid #f6f7f8; } }
+      color: #c9c9c9; }
 
 .translate {
   transform: translateX(0);
@@ -268,8 +265,7 @@ body {
   background-color: #20a4f3;
   display: flex;
   justify-content: center;
-  align-items: center;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%); }
+  align-items: center; }
   .home__headings {
     color: #f6f7f8;
     text-align: left;
@@ -312,21 +308,20 @@ body {
 
 .projects {
   width: 100vw;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #f6f7f8;
-  margin-top: -20%;
-  padding-bottom: 20%; }
+  padding-bottom: 4rem; }
   .projects__heading {
     font-size: 4rem;
     text-align: center;
-    margin: 4rem;
+    margin: 4rem auto 6rem auto;
     letter-spacing: 0.2rem;
     display: flex;
-    color: #170e2d;
-    margin-top: 20%; }
+    color: #170e2d; }
   .projects__container {
     width: 100vw;
     margin-bottom: 4rem;
@@ -391,17 +386,13 @@ body {
 
 .github {
   padding-bottom: 4rem;
-  background-color: #f6f7f8;
-  margin-top: -20%;
-  padding-bottom: 20%;
-  margin-bottom: 5rem; }
+  background-color: #f6f7f8; }
   .github__heading {
     font-size: 4rem;
     text-align: center;
     padding: 4rem;
     letter-spacing: 0.3rem;
-    color: #170e2d;
-    padding-top: 20%; }
+    color: #170e2d; }
 
 .calendar {
   width: 80vw;
@@ -410,8 +401,6 @@ body {
 
 .skills {
   background-color: #20a4f3;
-  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
-  margin-top: -20%;
   color: white;
   display: flex;
   flex-direction: column;
@@ -419,7 +408,8 @@ body {
   .skills__heading {
     font-size: 4rem;
     text-align: center;
-    padding-top: 10%; }
+    padding: 8rem;
+    padding-bottom: 2rem; }
     @media (max-width: 900px) {
       .skills__heading {
         padding-top: 20%; } }
@@ -458,27 +448,18 @@ body {
 
 .contact {
   background-color: #20a4f3;
-  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
-  margin-top: -20%;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 10;
-  margin-bottom: 4rem; }
-  @media (max-width: 900px) {
-    .contact {
-      height: 150vh; } }
+  z-index: 10; }
 
 .footer {
   background-color: white;
-  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
-  height: 40vh;
-  margin-top: -15%;
   color: #f6f7f8;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  padding: 5rem; }
   .footer i {
-    margin-top: 15rem;
     font-size: 10rem;
     margin-left: 2rem;
     margin-right: 2rem;
