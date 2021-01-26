@@ -434,6 +434,27 @@ body {
     margin: 0 3rem; }
   .skills li {
     line-height: 3.3rem; }
+  .skills i {
+    font-size: 6rem;
+    padding: 1rem; }
+
+.fa-js-square {
+  color: #f0db4f; }
+
+.fa-html5 {
+  color: #e44d26; }
+
+.fa-css3-alt {
+  color: #264de4; }
+
+.fa-sass {
+  color: #cc6699; }
+
+.fa-react {
+  color: #61dbfb; }
+
+.fa-git-alt {
+  color: #f34f29; }
 
 .contact {
   background-color: #20a4f3;
