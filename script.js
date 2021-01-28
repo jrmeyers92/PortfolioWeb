@@ -1,11 +1,18 @@
-//event listener for welcome screen
+// gsap opening animations
 
-document.addEventListener("DOMContentLoaded", (e) => {
-	const splash = document.querySelector(".splash");
-	setTimeout(() => {
-		splash.classList.add("display-none");
-	}, 1500);
-});
+// const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+
+tl.to(".text", { y: "0%", duration: 1, stagger: 0.25 });
+tl.to(".slider", { y: "-100%", duration: 1.5, delay: 0.5 });
+tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
+tl.fromTo(".nav__block", { opacity: 0 }, { opacity: 1, duration: 1 });
+tl.fromTo(
+	".home__headings",
+	{ opacity: 0 },
+	{ opacity: 1, duration: 1 },
+	"-=1"
+);
 
 // event listener for hamburger
 
@@ -43,20 +50,3 @@ document.body.addEventListener("click", (event) => {
 		hamburger.classList.remove("is-active");
 	}
 });
-
-// event listener for modal
-document.getElementById("contactMe").addEventListener("click", () => {
-	const modal = document.getElementById("modal");
-	modal.classList.add("show");
-	// modal.classList.add("translateX");
-});
-
-const modalExit = document.getElementById("modal__exit");
-modalExit.addEventListener("click", () => {
-	modal.classList.remove("show");
-});
-
-// event listener to pop up video of Doubelshot website
-document
-	.getElementById("doubleShot_button")
-	.addEventListener("click", (e) => {});

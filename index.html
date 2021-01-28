@@ -4,11 +4,6 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Web Dev Portfolio</title>
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
-			defer
-		></script>
-		<script src="script.js" defer></script>
 
 		<link
 			href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
@@ -28,10 +23,6 @@
 		/>
 	</head>
 	<body>
-		<div class="splash">
-			<h1 class="splash__text fade-in">Welcome to my website!</h1>
-		</div>
-
 		<!-- nav  -->
 		<nav class="nav">
 			<!-- nav name and logo -->
@@ -81,6 +72,16 @@
 				></a>
 			</div>
 		</section>
+
+		<div class="intro">
+			<div class="intro-text">
+				<h1 class="hide">
+					<span class="text">Welcome to my website!</span>
+				</h1>
+			</div>
+		</div>
+
+		<div class="slider"></div>
 
 		<section class="projects" id="projects">
 			<h2 class="projects__heading">Projects</h2>
@@ -223,20 +224,10 @@
 				><i class="fas fa-envelope"></i>
 			</a>
 		</footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
 
-		<!-- <section class="modal" id="modal">
-			<div class="modal__container">
-				<i class="fas fa-times modal__exit" id="modal__exit"></i>
-				<div class="modal__content">
-					<h2>Hello!</h2>
-					<p>
-						Please email me at JakeRMeyers92@gmail.com or give me a call at
-						417-403-1570. I look forward to conncecting with you!
-					</p>
-				</div>
-			</div>
-		</section> -->
-
+		<script src="script.js"></script>
 		<script>
 			GitHubCalendar(".calendar", "jrmeyers92");
 			// or enable responsive functionality
