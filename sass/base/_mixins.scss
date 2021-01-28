@@ -10,8 +10,20 @@
 	}
 }
 
+@mixin tabletLittleBigger {
+	@media (max-width: 970px) {
+		@content;
+	}
+}
+
 @mixin tabletUp {
 	@media (min-width: 900px) {
+		@content;
+	}
+}
+
+@mixin bigTabletUp {
+	@media (min-width: 1050px) {
 		@content;
 	}
 }
