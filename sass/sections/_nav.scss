@@ -59,8 +59,12 @@
 	&__item {
 		list-style-type: none;
 		margin: 1.5rem;
-		// text-transform: uppercase;
 		transition: all 0.2s;
+
+		@include tablet {
+			margin: 0.5rem;
+			margin-right: 2rem;
+		}
 	}
 
 	&__link {

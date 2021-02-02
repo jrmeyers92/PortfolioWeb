@@ -244,6 +244,10 @@ body {
     list-style-type: none;
     margin: 1.5rem;
     transition: all 0.2s; }
+    @media (max-width: 900px) {
+      .nav__item {
+        margin: 0.5rem;
+        margin-right: 2rem; } }
   .nav__link {
     text-decoration: none;
     color: white;
